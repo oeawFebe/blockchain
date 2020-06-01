@@ -39,9 +39,8 @@ public_key=private_key.public_key()
 # else:
 #     # load public key from file
 #     with open(PUBLIC_KEY_FILE,"rb") as key_file:
-#         public_key=serialization.load_pem_private_key(
+#         public_key=serialization.load_pem_public_key(
 #             key_file.read(),
-#             password=None,
 #             backend=default_backend())
 
 # signature=private_key.sign(
